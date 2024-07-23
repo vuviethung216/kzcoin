@@ -1,0 +1,22 @@
+input::placeholder {
+  color: #0028fd;
+  margin-left: 4px;
+}
+.layer-1 {
+  position: absolute;
+  bot: 10px;
+  z-index: -2;
+}
+.layer-2 {
+  position: absolute;
+  bot: 14px;
+  z-index: -1;
+}
+.main-box {
+  position: relative;
+  padding: 1rem;
+  background-color: white;
+  border: 2px solid black;
+  border-radius: 0.5rem;
+  z-index: 0;
+}
