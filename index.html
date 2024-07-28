@@ -25,52 +25,60 @@
     />
     <link href="./style.css" rel="stylesheet" />
   </head>
-  <body class="bg-white text-white">
+  <body class="bg-white text-white relative">
+    
     <div class="container bg-blue00">
-      <header
-        class="flex flex-row py-4 bg-white w-full h-auto justify-between relative "
-      >
-        <div
-          class="flex text-2xl text-blue00 justify-between ml-20 items-center"
+        <div class="fixed top-0 left-0 right-0 z-10">
+        <header
+        class="flex flex-row bg-white w-full h-[72px] justify-between relative "
         >
-          <i class="fa-solid fa-coins"></i>
-          <span class="ml-5 text-black font-semibold text-3xl">KZ</span>
-        </div>
-        <div class="flex gap-5 justify-center">
-          <div class="text-3xl text-black flex items-center gap-2">
-            <a href="https://x.com/KZ_coin" class="fa-brands fa-x-twitter"></a>
-            <a href="https://t.me/zkco_in" class="fa-brands fa-telegram"></a>
-            <div
-              class="bg-white flex gap-2 text-black py-2 px-4 w-auto h-12 rounded-xl border border-gray-300 text-2xl items-center main-box"
-            >
-              <i class="fa-solid fa-coins"></i>
-              <span class="flex justify-center font-normal">0</span>
-            </div>
-            <div class="layer-1 bg-gold01 w-full h-full rounded-md"></div>
-            <div class="layer-2 bg-pink02 w-full h-full rounded-md"></div>
-          </div>
-          <div>
-            <button
-              id="connectWallet"
-              class="bg-blue-600 text-white py-2 px-4 w-auto h-12 rounded-xl mr-5"
-            >
-              Connect Wallet
-            </button>
-          </div>
-        </div>
-        <div
-          class="mb-4 w-96 bg-blue00 flex border border-white rounded-b-xl justify-center font-semibold gap-2 items-center absolute bottom-[-52px] left-20"
+        <a
+        class="flex gap-2 text-2xl text-blue00 justify-between ml-[120px] items-center" href="/"
         >
-          <h3 class="text-xl">Total Participated Users</h3>
-          <span id="totalUsers" class="text-3xl font-bold">503,787</span>
-        </div>
-      </header>
+        <img src="https://kzco.in/assets/logo-5c9e459c.svg" alt="logo-sync" class="w-[42px] h-[24px]">
+        <img src="https://kzco.in/assets/kz-eb9ce5d1.svg" alt="kz" class="w-[33px] h-[20px]">
+      </a>
+      <div class="flex gap-5 justify-center">
+        <div class="text-3xl text-black flex items-center gap-4">
+          <div class="flex gap-4">
 
-      <main class="text-center grid grid-cols-2 mt-28">
-        <div class="main-content my-8 ml-20">
+            <a href="https://x.com/KZ_coin" class="fa-brands fa-x-twitter w-[32px] h-[32px]"></a>
+            <a href="https://t.me/zkco_in" class="fa-brands fa-telegram"></a>
+          </div>
+          <div
+          class="bg-white flex gap-1 text-black w-[68px] h-11 rounded-xl border border-[#e6e8ec] text-2xl shadow1 justify-center items-center"
+          > 
+          <div class="">
+              <img src="https://kzco.in/assets/zk-92ca4c27.svg" alt="logo-zk" class="w-[24px] h-[24px]">
+          </div>
+              <span class="flex justify-center font-normal text-4">0</span>
+          </div>
+            
+            
+          <button
+            id="connectWallet"
+            class="bg-blue00 text-white text-base py-2 px-4 w-[152px] h-11 rounded-xl mr-5 shadow1"
+            >
+            Connect Wallet
+          </button>
+          
+        </div>
+      </div>
+      <div
+        class="mb-4 w-96 bg-blue00 flex border border-white rounded-b-[16px] justify-center font-semibold gap-2 items-center absolute bottom-[-65px] ml-[120px]"
+        >
+        <p class="text-xl mt-2 font-medium">Total Participated Users</p>
+        <p id="totalUsers" class="text-[32px] font-medium">503,787</p>
+      </div>
+    </header>
+  </div>
+</div>
+
+      <main class="text-center bg-blue00 grid grid-cols-2 pl-[120px] pt-[180px] pb-[90px]">
+        <div class=" my-8">
           <div class="flex">
             <div class="text-9xl logo font-black justify-self-start">
-              <p>KZ</p>
+              <p class=>KZ</p>
             </div>
             <div class="flex">
               <a
@@ -80,64 +88,553 @@
               >
             </div>
           </div>
-          <h1 class="text-6xl opacity-50 font-bold flex justify-start">
+          <p class="text-[60px] text-white flex opacity-30 font-black zero">
             KNOWLEGDE TO ZERO
-          </h1>
+          </p>
         </div>
-        <div class="mt-10">
-          <div><h3 class="text-xl mb-3">Total Distributed KZ Points</h3></div>
-          <div class="flex justify-center">
+        <div class="flex flex-col gap-3 w-fit ">
+          <div><p class="text-2xl text center ml-12">Total Distributed KZ Points</p></div>
+          
             <div
-              class="bg-white text-black w-96 h-28 flex justify-center items-center border-4 border-black rounded-xl"
+              class="bg-white text-black flex justify-center items-center border-4 border-black rounded-xl h-[140px] w-[464.6px] shadow3 ml-14"
             >
-              <span id="totalPoints" class="text-5xl">720,788,004,413</span>
+              <p  class=" text-[48px]">720,788,004,413
+              </p>
+              <img src="https://kzco.in/assets/two2-0e80e13f.svg" alt="star"
+                class="w-[48px] h-[48px]">
+              
+                
+              
             </div>
-          </div>
+          
         </div>
       </main>
-    </div>
-    <marquee
-      class="grid grid-rows-1-row gap-10 bg-white text-black text-2xl h-16 items-center loop-10"
-    >
-      <span><i class="fa-solid fa-coins text-blue00"></i> KZ </i></span>
-      <span>KZ Point <i class="fa-solid fa-star text-gold01"></i></span>
-      <span><i class="fa-solid fa-coins text-blue00"></i> KZ </i></span>
-      <span>KZ Point <i class="fa-solid fa-star text-gold01"></i></span>
-      <span><i class="fa-solid fa-coins text-blue00"></i> KZ </i></span>
-      <span>KZ Point <i class="fa-solid fa-star text-gold01"></i></span>
-      <span><i class="fa-solid fa-coins text-blue00"></i> KZ </i></span>
-      <span>KZ Point <i class="fa-solid fa-star text-gold01"></i></span>
+    
+      <!-- Marquee -->
 
-      <span><i class="fa-solid fa-coins text-blue00"></i> KZ </i></span>
-      <span>KZ Point <i class="fa-solid fa-star text-gold01"></i></span>
-      <span><i class="fa-solid fa-coins text-blue00"></i> KZ </i></span>
-      <span>KZ Point <i class="fa-solid fa-star text-gold01"></i></span>
-      <span><i class="fa-solid fa-coins text-blue00"></i> KZ </i></span>
-      <span>KZ Point <i class="fa-solid fa-star text-gold01"></i></span>
-      <span><i class="fa-solid fa-coins text-blue00"></i> KZ </i></span>
-      <span>KZ Point <i class="fa-solid fa-star text-gold01"></i></span>
-    </marquee>
-    <div class="h-64 w-auto mx-20 bg-blue00 border rounded-b-xl">
+    <div
+      class="flex gap-10 bg-white text-black text-2xl h-16 items-center overflow-hidden "
+    >
+      <div class="flex items-center gap-10 overflow-hidden shrink-0">
+        <div class="flex justify-center gap-10 marque1">
+
+          <div class="flex gap-2">
+        <p class="text-[24px]">KZ Point</p>
+        <div class="w-[32px] h-[32px]">
+          <img src="https://kzco.in/assets/two2-0e80e13f.svg" alt="star" class="w-[32px] h-[32px]">
+        </div>
+      </div>
+      
+      <div class="flex justify-center gap-2 ">
+        <div class="w-32px h-[32px] flex items-center">
+          <img src="https://kzco.in/assets/zk-92ca4c27.svg" alt="logo" class="w-[32px] h-[32px]">
+        </div>
+        <p class="text-[24px]">KZ</p>
+      
+    </div>
+    
+    <div class="flex gap-2">
+      <p class="text-[24px]">KZ Point</p>
+      <div class="w-[32px] h-[32px]">
+        <img src="https://kzco.in/assets/two2-0e80e13f.svg" alt="star" class="w-[32px] h-[32px]">
+      </div>
+    </div>
+    
+    <div class="flex justify-center gap-2 ">
+      <div class="w-32px h-[32px] flex items-center">
+        <img src="https://kzco.in/assets/zk-92ca4c27.svg" alt="logo" class="w-[32px] h-[32px]">
+      </div>
+      <p class="text-[24px]">KZ</p>
+    
+  </div>
+  
+  <div class="flex gap-2">
+    <p class="text-[24px]">KZ Point</p>
+    <div class="w-[32px] h-[32px]">
+      <img src="https://kzco.in/assets/two2-0e80e13f.svg" alt="star" class="w-[32px] h-[32px]">
+    </div>
+  </div>
+  
+  <div class="flex justify-center gap-2 ">
+    <div class="w-32px h-[32px] flex items-center">
+      <img src="https://kzco.in/assets/zk-92ca4c27.svg" alt="logo" class="w-[32px] h-[32px]">
+    </div>
+    <p class="text-[24px]">KZ</p>
+  
+</div>
+
+<div class="flex gap-2">
+  <p class="text-[24px]">KZ Point</p>
+  <div class="w-[32px] h-[32px]">
+    <img src="https://kzco.in/assets/two2-0e80e13f.svg" alt="star" class="w-[32px] h-[32px]">
+  </div>
+</div>
+
+<div class="flex justify-center gap-2 ">
+  <div class="w-32px h-[32px] flex items-center">
+    <img src="https://kzco.in/assets/zk-92ca4c27.svg" alt="logo" class="w-[32px] h-[32px]">
+  </div>
+  <p class="text-[24px]">KZ</p>
+
+</div>
+
+<div class="flex gap-2">
+  <p class="text-[24px]">KZ Point</p>
+  <div class="w-[32px] h-[32px]">
+    <img src="https://kzco.in/assets/two2-0e80e13f.svg" alt="star" class="w-[32px] h-[32px]">
+  </div>
+</div>
+
+<div class="flex justify-center gap-2 ">
+  <div class="w-32px h-[32px] flex items-center">
+    <img src="https://kzco.in/assets/zk-92ca4c27.svg" alt="logo" class="w-[32px] h-[32px]">
+  </div>
+  <p class="text-[24px]">KZ</p>
+
+</div>
+
+<div class="flex gap-2">
+  <p class="text-[24px]">KZ Point</p>
+  <div class="w-[32px] h-[32px]">
+    <img src="https://kzco.in/assets/two2-0e80e13f.svg" alt="star" class="w-[32px] h-[32px]">
+  </div>
+</div>
+
+<div class="flex justify-center gap-2 ">
+  <div class="w-32px h-[32px] flex items-center">
+    <img src="https://kzco.in/assets/zk-92ca4c27.svg" alt="logo" class="w-[32px] h-[32px]">
+  </div>
+  <p class="text-[24px]">KZ</p>
+
+</div>
+<div class="flex gap-2">
+  <p class="text-[24px]">KZ Point</p>
+  <div class="w-[32px] h-[32px]">
+    <img src="https://kzco.in/assets/two2-0e80e13f.svg" alt="star" class="w-[32px] h-[32px]">
+  </div>
+</div>
+
+<div class="flex justify-center gap-2 ">
+  <div class="w-32px h-[32px] flex items-center">
+    <img src="https://kzco.in/assets/zk-92ca4c27.svg" alt="logo" class="w-[32px] h-[32px]">
+  </div>
+  <p class="text-[24px]">KZ</p>
+
+</div>
+<div class="flex gap-2">
+  <p class="text-[24px]">KZ Point</p>
+  <div class="w-[32px] h-[32px]">
+    <img src="https://kzco.in/assets/two2-0e80e13f.svg" alt="star" class="w-[32px] h-[32px]">
+  </div>
+</div>
+
+<div class="flex justify-center gap-2 ">
+  <div class="w-32px h-[32px] flex items-center">
+    <img src="https://kzco.in/assets/zk-92ca4c27.svg" alt="logo" class="w-[32px] h-[32px]">
+  </div>
+  <p class="text-[24px]">KZ</p>
+
+</div>
+<div class="flex gap-2">
+  <p class="text-[24px]">KZ Point</p>
+  <div class="w-[32px] h-[32px]">
+    <img src="https://kzco.in/assets/two2-0e80e13f.svg" alt="star" class="w-[32px] h-[32px]">
+  </div>
+</div>
+
+<div class="flex justify-center gap-2 ">
+  <div class="w-32px h-[32px] flex items-center">
+    <img src="https://kzco.in/assets/zk-92ca4c27.svg" alt="logo" class="w-[32px] h-[32px]">
+  </div>
+  <p class="text-[24px]">KZ</p>
+
+</div>
+<div class="flex gap-2">
+  <p class="text-[24px]">KZ Point</p>
+  <div class="w-[32px] h-[32px]">
+    <img src="https://kzco.in/assets/two2-0e80e13f.svg" alt="star" class="w-[32px] h-[32px]">
+  </div>
+</div>
+
+<div class="flex justify-center gap-2 ">
+  <div class="w-32px h-[32px] flex items-center">
+    <img src="https://kzco.in/assets/zk-92ca4c27.svg" alt="logo" class="w-[32px] h-[32px]">
+  </div>
+  <p class="text-[24px]">KZ</p>
+
+</div>
+<div class="flex gap-2">
+  <p class="text-[24px]">KZ Point</p>
+  <div class="w-[32px] h-[32px]">
+    <img src="https://kzco.in/assets/two2-0e80e13f.svg" alt="star" class="w-[32px] h-[32px]">
+  </div>
+</div>
+
+<div class="flex justify-center gap-2 ">
+  <div class="w-32px h-[32px] flex items-center">
+    <img src="https://kzco.in/assets/zk-92ca4c27.svg" alt="logo" class="w-[32px] h-[32px]">
+  </div>
+  <p class="text-[24px]">KZ</p>
+
+</div>
+<div class="flex gap-2">
+  <p class="text-[24px]">KZ Point</p>
+  <div class="w-[32px] h-[32px]">
+    <img src="https://kzco.in/assets/two2-0e80e13f.svg" alt="star" class="w-[32px] h-[32px]">
+  </div>
+</div>
+
+<div class="flex justify-center gap-2 ">
+  <div class="w-32px h-[32px] flex items-center">
+    <img src="https://kzco.in/assets/zk-92ca4c27.svg" alt="logo" class="w-[32px] h-[32px]">
+  </div>
+  <p class="text-[24px]">KZ</p>
+
+</div>
+<div class="flex gap-2">
+  <p class="text-[24px]">KZ Point</p>
+  <div class="w-[32px] h-[32px]">
+    <img src="https://kzco.in/assets/two2-0e80e13f.svg" alt="star" class="w-[32px] h-[32px]">
+  </div>
+</div>
+
+<div class="flex justify-center gap-2 ">
+  <div class="w-32px h-[32px] flex items-center">
+    <img src="https://kzco.in/assets/zk-92ca4c27.svg" alt="logo" class="w-[32px] h-[32px]">
+  </div>
+  <p class="text-[24px]">KZ</p>
+
+</div>
+<div class="flex gap-2">
+  <p class="text-[24px]">KZ Point</p>
+  <div class="w-[32px] h-[32px]">
+    <img src="https://kzco.in/assets/two2-0e80e13f.svg" alt="star" class="w-[32px] h-[32px]">
+  </div>
+</div>
+
+<div class="flex justify-center gap-2 ">
+  <div class="w-32px h-[32px] flex items-center">
+    <img src="https://kzco.in/assets/zk-92ca4c27.svg" alt="logo" class="w-[32px] h-[32px]">
+  </div>
+  <p class="text-[24px]">KZ</p>
+
+</div>
+<div class="flex gap-2">
+  <p class="text-[24px]">KZ Point</p>
+  <div class="w-[32px] h-[32px]">
+    <img src="https://kzco.in/assets/two2-0e80e13f.svg" alt="star" class="w-[32px] h-[32px]">
+  </div>
+</div>
+
+<div class="flex justify-center gap-2 ">
+  <div class="w-32px h-[32px] flex items-center">
+    <img src="https://kzco.in/assets/zk-92ca4c27.svg" alt="logo" class="w-[32px] h-[32px]">
+  </div>
+  <p class="text-[24px]">KZ</p>
+
+</div>
+<div class="flex gap-2">
+  <p class="text-[24px]">KZ Point</p>
+  <div class="w-[32px] h-[32px]">
+    <img src="https://kzco.in/assets/two2-0e80e13f.svg" alt="star" class="w-[32px] h-[32px]">
+  </div>
+</div>
+
+<div class="flex justify-center gap-2 ">
+  <div class="w-32px h-[32px] flex items-center">
+    <img src="https://kzco.in/assets/zk-92ca4c27.svg" alt="logo" class="w-[32px] h-[32px]">
+  </div>
+  <p class="text-[24px]">KZ</p>
+
+</div>
+<div class="flex gap-2">
+  <p class="text-[24px]">KZ Point</p>
+  <div class="w-[32px] h-[32px]">
+    <img src="https://kzco.in/assets/two2-0e80e13f.svg" alt="star" class="w-[32px] h-[32px]">
+  </div>
+</div>
+
+<div class="flex justify-center gap-2 ">
+  <div class="w-32px h-[32px] flex items-center">
+    <img src="https://kzco.in/assets/zk-92ca4c27.svg" alt="logo" class="w-[32px] h-[32px]">
+  </div>
+  <p class="text-[24px]">KZ</p>
+
+</div>
+<div class="flex gap-2">
+  <p class="text-[24px]">KZ Point</p>
+  <div class="w-[32px] h-[32px]">
+    <img src="https://kzco.in/assets/two2-0e80e13f.svg" alt="star" class="w-[32px] h-[32px]">
+  </div>
+</div>
+
+<div class="flex justify-center gap-2 ">
+  <div class="w-32px h-[32px] flex items-center">
+    <img src="https://kzco.in/assets/zk-92ca4c27.svg" alt="logo" class="w-[32px] h-[32px]">
+  </div>
+  <p class="text-[24px]">KZ</p>
+
+</div>
+
+<div class="flex gap-2">
+  <p class="text-[24px]">KZ Point</p>
+  <div class="w-[32px] h-[32px]">
+    <img src="https://kzco.in/assets/two2-0e80e13f.svg" alt="star" class="w-[32px] h-[32px]">
+  </div>
+</div>
+
+<div class="flex justify-center gap-2 ">
+  <div class="w-32px h-[32px] flex items-center">
+    <img src="https://kzco.in/assets/zk-92ca4c27.svg" alt="logo" class="w-[32px] h-[32px]">
+  </div>
+  <p class="text-[24px]">KZ</p>
+
+</div>
+<div class="flex gap-2">
+  <p class="text-[24px]">KZ Point</p>
+  <div class="w-[32px] h-[32px]">
+    <img src="https://kzco.in/assets/two2-0e80e13f.svg" alt="star" class="w-[32px] h-[32px]">
+  </div>
+</div>
+
+<div class="flex justify-center gap-2 ">
+  <div class="w-32px h-[32px] flex items-center">
+    <img src="https://kzco.in/assets/zk-92ca4c27.svg" alt="logo" class="w-[32px] h-[32px]">
+  </div>
+  <p class="text-[24px]">KZ</p>
+
+</div>
+<div class="flex gap-2">
+  <p class="text-[24px]">KZ Point</p>
+  <div class="w-[32px] h-[32px]">
+    <img src="https://kzco.in/assets/two2-0e80e13f.svg" alt="star" class="w-[32px] h-[32px]">
+  </div>
+</div>
+
+<div class="flex justify-center gap-2 ">
+  <div class="w-32px h-[32px] flex items-center">
+    <img src="https://kzco.in/assets/zk-92ca4c27.svg" alt="logo" class="w-[32px] h-[32px]">
+  </div>
+  <p class="text-[24px]">KZ</p>
+
+</div>
+<div class="flex gap-2">
+  <p class="text-[24px]">KZ Point</p>
+  <div class="w-[32px] h-[32px]">
+    <img src="https://kzco.in/assets/two2-0e80e13f.svg" alt="star" class="w-[32px] h-[32px]">
+  </div>
+</div>
+
+<div class="flex justify-center gap-2 ">
+  <div class="w-32px h-[32px] flex items-center">
+    <img src="https://kzco.in/assets/zk-92ca4c27.svg" alt="logo" class="w-[32px] h-[32px]">
+  </div>
+  <p class="text-[24px]">KZ</p>
+
+</div>
+<div class="flex gap-2">
+  <p class="text-[24px]">KZ Point</p>
+  <div class="w-[32px] h-[32px]">
+    <img src="https://kzco.in/assets/two2-0e80e13f.svg" alt="star" class="w-[32px] h-[32px]">
+  </div>
+</div>
+
+<div class="flex justify-center gap-2 ">
+  <div class="w-32px h-[32px] flex items-center">
+    <img src="https://kzco.in/assets/zk-92ca4c27.svg" alt="logo" class="w-[32px] h-[32px]">
+  </div>
+  <p class="text-[24px]">KZ</p>
+
+</div>
+<div class="flex gap-2">
+  <p class="text-[24px]">KZ Point</p>
+  <div class="w-[32px] h-[32px]">
+    <img src="https://kzco.in/assets/two2-0e80e13f.svg" alt="star" class="w-[32px] h-[32px]">
+  </div>
+</div>
+
+<div class="flex justify-center gap-2 ">
+  <div class="w-32px h-[32px] flex items-center">
+    <img src="https://kzco.in/assets/zk-92ca4c27.svg" alt="logo" class="w-[32px] h-[32px]">
+  </div>
+  <p class="text-[24px]">KZ</p>
+
+</div>
+<div class="flex gap-2">
+  <p class="text-[24px]">KZ Point</p>
+  <div class="w-[32px] h-[32px]">
+    <img src="https://kzco.in/assets/two2-0e80e13f.svg" alt="star" class="w-[32px] h-[32px]">
+  </div>
+</div>
+
+<div class="flex justify-center gap-2 ">
+  <div class="w-32px h-[32px] flex items-center">
+    <img src="https://kzco.in/assets/zk-92ca4c27.svg" alt="logo" class="w-[32px] h-[32px]">
+  </div>
+  <p class="text-[24px]">KZ</p>
+
+</div>
+<div class="flex gap-2">
+  <p class="text-[24px]">KZ Point</p>
+  <div class="w-[32px] h-[32px]">
+    <img src="https://kzco.in/assets/two2-0e80e13f.svg" alt="star" class="w-[32px] h-[32px]">
+  </div>
+</div>
+
+<div class="flex justify-center gap-2 ">
+  <div class="w-32px h-[32px] flex items-center">
+    <img src="https://kzco.in/assets/zk-92ca4c27.svg" alt="logo" class="w-[32px] h-[32px]">
+  </div>
+  <p class="text-[24px]">KZ</p>
+
+</div>
+<div class="flex gap-2">
+  <p class="text-[24px]">KZ Point</p>
+  <div class="w-[32px] h-[32px]">
+    <img src="https://kzco.in/assets/two2-0e80e13f.svg" alt="star" class="w-[32px] h-[32px]">
+  </div>
+</div>
+
+<div class="flex justify-center gap-2 ">
+  <div class="w-32px h-[32px] flex items-center">
+    <img src="https://kzco.in/assets/zk-92ca4c27.svg" alt="logo" class="w-[32px] h-[32px]">
+  </div>
+  <p class="text-[24px]">KZ</p>
+
+</div>
+<div class="flex gap-2">
+  <p class="text-[24px]">KZ Point</p>
+  <div class="w-[32px] h-[32px]">
+    <img src="https://kzco.in/assets/two2-0e80e13f.svg" alt="star" class="w-[32px] h-[32px]">
+  </div>
+</div>
+
+<div class="flex justify-center gap-2 ">
+  <div class="w-32px h-[32px] flex items-center">
+    <img src="https://kzco.in/assets/zk-92ca4c27.svg" alt="logo" class="w-[32px] h-[32px]">
+  </div>
+  <p class="text-[24px]">KZ</p>
+
+</div>
+<div class="flex gap-2">
+  <p class="text-[24px]">KZ Point</p>
+  <div class="w-[32px] h-[32px]">
+    <img src="https://kzco.in/assets/two2-0e80e13f.svg" alt="star" class="w-[32px] h-[32px]">
+  </div>
+</div>
+
+<div class="flex justify-center gap-2 ">
+  <div class="w-32px h-[32px] flex items-center">
+    <img src="https://kzco.in/assets/zk-92ca4c27.svg" alt="logo" class="w-[32px] h-[32px]">
+  </div>
+  <p class="text-[24px]">KZ</p>
+
+</div>
+<div class="flex gap-2">
+  <p class="text-[24px]">KZ Point</p>
+  <div class="w-[32px] h-[32px]">
+    <img src="https://kzco.in/assets/two2-0e80e13f.svg" alt="star" class="w-[32px] h-[32px]">
+  </div>
+</div>
+
+<div class="flex justify-center gap-2 ">
+  <div class="w-32px h-[32px] flex items-center">
+    <img src="https://kzco.in/assets/zk-92ca4c27.svg" alt="logo" class="w-[32px] h-[32px]">
+  </div>
+  <p class="text-[24px]">KZ</p>
+
+</div>
+<div class="flex gap-2">
+  <p class="text-[24px]">KZ Point</p>
+  <div class="w-[32px] h-[32px]">
+    <img src="https://kzco.in/assets/two2-0e80e13f.svg" alt="star" class="w-[32px] h-[32px]">
+  </div>
+</div>
+
+<div class="flex justify-center gap-2 ">
+  <div class="w-32px h-[32px] flex items-center">
+    <img src="https://kzco.in/assets/zk-92ca4c27.svg" alt="logo" class="w-[32px] h-[32px]">
+  </div>
+  <p class="text-[24px]">KZ</p>
+
+</div>
+<div class="flex gap-2">
+  <p class="text-[24px]">KZ Point</p>
+  <div class="w-[32px] h-[32px]">
+    <img src="https://kzco.in/assets/two2-0e80e13f.svg" alt="star" class="w-[32px] h-[32px]">
+  </div>
+</div>
+
+<div class="flex justify-center gap-2 ">
+  <div class="w-32px h-[32px] flex items-center">
+    <img src="https://kzco.in/assets/zk-92ca4c27.svg" alt="logo" class="w-[32px] h-[32px]">
+  </div>
+  <p class="text-[24px]">KZ</p>
+
+</div>
+<div class="flex gap-2">
+  <p class="text-[24px]">KZ Point</p>
+  <div class="w-[32px] h-[32px]">
+    <img src="https://kzco.in/assets/two2-0e80e13f.svg" alt="star" class="w-[32px] h-[32px]">
+  </div>
+</div>
+
+<div class="flex justify-center gap-2 ">
+  <div class="w-32px h-[32px] flex items-center">
+    <img src="https://kzco.in/assets/zk-92ca4c27.svg" alt="logo" class="w-[32px] h-[32px]">
+  </div>
+  <p class="text-[24px]">KZ</p>
+
+</div>
+<div class="flex gap-2">
+  <p class="text-[24px]">KZ Point</p>
+  <div class="w-[32px] h-[32px]">
+    <img src="https://kzco.in/assets/two2-0e80e13f.svg" alt="star" class="w-[32px] h-[32px]">
+  </div>
+</div>
+
+<div class="flex justify-center gap-2 ">
+  <div class="w-32px h-[32px] flex items-center">
+    <img src="https://kzco.in/assets/zk-92ca4c27.svg" alt="logo" class="w-[32px] h-[32px]">
+  </div>
+  <p class="text-[24px]">KZ</p>
+
+</div>
+
+
+  </div>
+</div>
+</div>
+    
+  
+
+    <div class="h-64 w-auto mx-20 bg-blue00 border rounded-b-2xl shadow4">
       <div class="mx-10">
 
         <div class="flex gap-3 mt-8 justify-center">
-          <input type="text" id="wallet" class="bg-white text-blue00 w-[100%] h-12 rounded-xl" placeholder="Eligibility check: enter wallet address">
-          <button id="check" class="bg-white text-blue00 w-20 h-12 border- rounded-xl">Check</button>
+          <input type="text" id="wallet" class="bg-white text-blue00 w-[100%] h-12 rounded-xl placeholder-custom " placeholder="Eligibility check: enter wallet address">
+          <button id="check" class="bg-white text-blue00 w-20 h-12 border rounded-xl shadow1">Check</button>
         </div>
         <div class="border-b-[0.5px] border-white w-auto opacity-20 mt-5"></div>
       </div>
       <div class="flex flex-cols-3 justify-between mx-10 mt-5 text-base">
         <div class="grid grid-rows-2">
-          <span>Your KZ Points Balance </span>
-          <span class="text-3xl">-- <i class="fa-solid fa-star text-gold01 text-xl"></i></span>
+          <p class="text-white text-8 ">Your KZ Points Balance </p>
+          <span class="flex tracking-[-0.64px]" >
+            <p class="text-[48px] text-white mr-2">--</p>
+            <img src="https://kzco.in/assets/two3-807026c7.svg" alt="star" class="w-[32px] h-[32px]">
+          </span>
         </div>
         <div class="grid grid-rows-2">
-          <span>Convertible KZ Point </span>
-          <span class="text-3xl">-- <i class="fa-solid fa-star text-xl text-gold01"></i></span>
+          <p class="text-white text-8">Convertible KZ Points </p>
+          <span class="flex tracking-[-0.64px]" >
+            <p class="text-[48px] text-white mr-2">--</p>
+            <img src="https://kzco.in/assets/two3-807026c7.svg" alt="star" class="w-[32px] h-[32px]">
+          </span>
         </div>
         <div class="grid grid-rows-2">
           <span>KZ Points can be converted after $ZK TGE </span>
-          <button id="check" class="bg-white text-blue00 w-auto h-12 border- rounded-xl">Convert to $KZ</button>
+          <button id="check" class="bg-white text-blue00 w-auto h-12 border- rounded-xl shadow1">Convert to $KZ</button>
         </div>
       </div>
     </div>
@@ -146,31 +643,33 @@
 
     <div class="mt-24">
 
-      <div class="text-white text-7xl font-bold ">
+      <div class="text-white text-[120px] font-bold ">
         INTRODUCTION
       </div>
     </div>
     <div class="mt-32 ml-36">
-    <div class="text-gold01 font-semibold text-6xl">KNOWLEDGE TO ZERO</div>
-    <div class="text-white text-7xl font-bold flex mt-10">1 $KZ = 1 $ZK</div>
+    <div class="text-gold01 font-bold md:text-[80px] text-[24px] ">KNOWLEDGE TO ZERO</div>
+    <div class="text-white text-[104px] font-bold flex mt-10">1 $KZ = 1 $ZK</div>
     </div>
   </div>
 
 </div> 
 
+
 <!-- Tokenomic -->
-<div class="w-full h-screen bg-blue00 flex justify-center">
+<div class="w-full h-screen bg-blue00 flex justify-center pt-96">
   <div class="text-center text-white">
 
     <div class="mt-24 mb-20">
 
-      <div class="text-white text-7xl font-bold ">
+      <div class="text-white text-[64px] md:text-[120px] mb-[88px] font-bold ">
         TOKENOMIC
       </div>
     </div>
     <div class="flex ">
-    <div class="pie shadow-xl mr-40 w-[300px] h-[300px] border rounded-full bg-white"></div>
+    
     <div class="text-white mt-20 text-center">
+      <img src="https://kzco.in/assets/chart-ed95abd1.png" alt="chart" class="w-[263px] h-[263px] md:w-[374px] md:h-[374px]">
       <p class="text-4xl font-bold mb-4">
         <span class="inline-block w-8 h-8 text-5xl bg-white mr-2"></span>
         100% COMMUNITY
@@ -186,7 +685,7 @@
 </div> 
 
 <!-- Mascot -->
-<div class="w-full h-screen bg-blue00 ">
+<div class="w-full h-screen bg-blue00 -[200px] ">
   <div class="text-center text-white flex justify-center">
 
     <div class="mt-36">
