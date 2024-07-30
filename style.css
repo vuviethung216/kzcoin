@@ -37,3 +37,6 @@
     transform: translate(calc(-100% - 32px));
   }
 }
+.hidden {
+  display: none;
+}
