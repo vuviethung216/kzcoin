@@ -15,6 +15,9 @@
               pink02: "#FD0089",
             },
           },
+          screens: {
+          'kl': '400px'
+          }
         },
       };
     </script>
@@ -30,23 +33,23 @@
     <div class="container bg-blue00">
         <div class="fixed top-0 left-0 right-0 z-10">
         <header
-        class="flex flex-row bg-white w-full h-[72px] justify-between relative "
+        class="flex flex-row bg-white w-screen  h-[72px] justify-between relative "
         >
         <a
-        class="flex gap-2 text-2xl text-blue00 justify-between ml-[120px] items-center" href="/"
+        class="flex gap-2 text-2xl text-blue00 justify-between max-[700px]:pl-[16px] min-[700px]:ml-[120px] items-center" href="/"
         >
         <img src="https://kzco.in/assets/logo-5c9e459c.svg" alt="logo-sync" class="w-[42px] h-[24px]">
-        <img src="https://kzco.in/assets/kz-eb9ce5d1.svg" alt="kz" class="w-[33px] h-[20px]">
+        <img src="https://kzco.in/assets/kz-eb9ce5d1.svg" alt="kz" class="w-[33px] h-[20px] max-[700px]:hidden">
       </a>
-      <div class="flex gap-5 justify-center">
+      <div class="flex gap-5 justify-center min-[700px]:mr-4">
         <div class="text-3xl text-black flex items-center gap-4">
-          <div class="flex gap-4">
+          <div class="flex gap-4 max-[600px]:hidden">
 
             <a href="https://x.com/KZ_coin" class="fa-brands fa-x-twitter w-[32px] h-[32px]"></a>
             <a href="https://t.me/zkco_in" class="fa-brands fa-telegram"></a>
           </div>
           <div
-          class="bg-white flex gap-1 text-black w-[68px] h-11 rounded-xl border border-[#e6e8ec] text-2xl shadow1 justify-center items-center"
+          class="bg-white flex gap-1 text-black w-[68px] max-[700px]:w-[60px] h-11 rounded-xl border border-[#e6e8ec] text-2xl shadow1 justify-center items-center"
           > 
           <div class="">
               <img src="https://kzco.in/assets/zk-92ca4c27.svg" alt="logo-zk" class="w-[24px] h-[24px]">
@@ -57,7 +60,7 @@
             
           <button
             id="connectWallet"
-            class="bg-blue00 text-white text-base py-2 px-4 w-[152px] h-11 rounded-xl mr-5 shadow1"
+            class="bg-blue00 text-white text-base py-2 px-4 w-[152px] h-11 rounded-xl mr-5 max-[700px]:mr-2 shadow1"
             >
             Connect Wallet
           </button>
@@ -65,7 +68,7 @@
         </div>
       </div>
       <div
-        class="mb-4 w-96 bg-blue00 flex border border-white rounded-b-[16px] justify-center font-semibold gap-2 items-center absolute bottom-[-65px] ml-[120px]"
+        class="mb-4 w-96 bg-blue00 border border-white flex rounded-b-[16px] justify-center font-semibold gap-2 items-center absolute top-[72px] ml-[120px] max-[600px]:hidden"
         >
         <p class="text-xl mt-2 font-medium">Total Participated Users</p>
         <p id="totalUsers" class="text-[32px] font-medium">503,787</p>
@@ -74,13 +77,28 @@
   </div>
 </div>
 
-      <main class="text-center bg-blue00 grid grid-cols-2 pl-[120px] pt-[180px] pb-[90px]">
-        <div class=" my-8">
+      <main class="text-center bg-blue00 grid grid-cols-2 max-[700px]:grid-cols-1 md:pl-[120px] max-[700px]:pl-[16px] pt-[180px] md:pb-[90px] pb-[32px] max-[700px]:pt-[66px]">
+        <div class=" my-8 min-[700px]:ml-[120px]">
+          <div
+          class=" w-[310px] h-[42px] flex justify-center items-center max-[700px]:w-fit min-[700px]:hidden max-[700px]:pt-[0px]"
+          >
+          <div class="flex gap-1 mb-4  bg-blue00 border border-white rounded-b-[16px] justify-center font-semibold items-center  max-[700px]:ml-[0px] max-[700px]:mr-[0px]  py-[4px]  ">
+          <p class="text-[16px] mt-2 font-medium ml-4 ">Total Participated Users</p>
+          <p id="totalUsers" class="text-[24px] font-medium mr-4">503,787</p>
+        </div>
+        </div>
+        
           <div class="flex">
-            <div class="text-9xl logo font-black justify-self-start">
+           
+          <div class="flex gap-5">
+            <div class=" text-9xl max-[700px]:w-[128px] max-[700px]:mr-10 max-[700px]:h-[106px] logo font-black justify-self-start max-[700px]:ml-[-10px]">
               <p class=>KZ</p>
             </div>
-            <div class="flex">
+            <div class="w-[127px] h-[121px]">
+              <img src="https://img.freepik.com/free-vector/cute-cat-robot-cyborg-cartoon-vector-icon-illustration-animal-technology-icon-isolated-flat-vector_138676-12192.jpg?t=st=1722240112~exp=1722243712~hmac=f6e73ad0d6203c9e84545b9ef0a95227595b8e8af05c9ebfe51cc04ff30bd600&w=740" alt="cat" class="w-full h-full">
+            </div>
+          </div>
+            <div class="flex pl-2 max-[700px]:hidden">
               <a
                 href="https://kzco.in/whitepaper.jpg"
                 class="text-white flex text-2xl underline items-end"
@@ -88,20 +106,45 @@
               >
             </div>
           </div>
-          <p class="text-[60px] text-white flex opacity-30 font-black zero">
+          <div class="min-[700px]:text-[60px] text-left text-[40px] max-[700px]:w-fit">
+          <p class=" text-white opacity-30 font-black zero">
             KNOWLEGDE TO ZERO
           </p>
         </div>
-        <div class="flex flex-col gap-3 w-fit ">
-          <div><p class="text-2xl text center ml-12">Total Distributed KZ Points</p></div>
+          <div class="flex gap-4 min-[700px]:hidden">
+            <div class="flex items-center gap-2">
+              <div class="fa-brands fa-x-twitter"></div>
+            <a
+                href="https://x.com/KZ_coin"
+                class="text-white flex text-xl  items-end"
+                >Twitter</a
+              >
+            </div>
+            <div class="flex items-center justify-center gap-2">
+              <div class="fa-brands fa-telegram"></div>
+              <a
+                href="https://t.me/zkco_in"
+                class="text-white flex text-xl  items-end"
+                >Telegram</a
+              >
+            </div>
+            <a
+                href="https://kzco.in/whitepaper.jpg"
+                class="text-white flex text-xl underline items-end"
+                >Whitepaper</a
+              >
+          </div>
+        </div>
+        <div class=" flex-col gap-3 w-fit max-[700px]:w-full flex justify-center min-[700px]:ml-20">
+         <p class="text-2xl block text center ml-12 max-[700px]:ml-0">Total Distributed KZ Points</p>
           
             <div
-              class="bg-white text-black flex justify-center items-center border-4 border-black rounded-xl h-[140px] w-[464.6px] shadow3 ml-14"
+              class="bg-white text-black flex justify-center items-center border-4 border-black rounded-xl h-[140px] w-[464.6px] max-[700px]:w-[318px] max-[700px]:h-[140px] shadow3 md:ml-14"
             >
-              <p  class=" text-[48px]">720,788,004,413
+              <p  class=" text-[48px] max-[700px]:text-[32px]">720,788,004,413
               </p>
               <img src="https://kzco.in/assets/two2-0e80e13f.svg" alt="star"
-                class="w-[48px] h-[48px]">
+                class="w-[48px] h-[48px] max-[700px]:w-[32px] max-[700px]:h-[32px]">
               
                 
               
@@ -608,80 +651,88 @@
     
   
 
-    <div class="h-64 w-auto mx-20 bg-blue00 border rounded-b-2xl shadow4">
-      <div class="mx-10">
+    <div class=" w-auto max-[700px]:mx-[16px] max-[700px]:px-[20px] max-[700px]:pb-[32px] mx-20 bg-blue00 border rounded-b-2xl shadow4 flex flex-col">
+      <div class="min-[700px]:px-5">
 
-        <div class="flex gap-3 mt-8 justify-center">
+        <div class="flex max-[700px]:flex-col gap-3 mt-8 justify-center">
           <input type="text" id="wallet" class="bg-white text-blue00 w-[100%] h-12 rounded-xl placeholder-custom " placeholder="Eligibility check: enter wallet address">
-          <button id="check" class="bg-white text-blue00 w-20 h-12 border rounded-xl shadow1">Check</button>
+          <button id="check" class="bg-white max-[700px]:w-full text-blue00 w-20 h-12 border rounded-xl shadow1">Check</button>
         </div>
         <div class="border-b-[0.5px] border-white w-auto opacity-20 mt-5"></div>
       </div>
-      <div class="flex flex-cols-3 justify-between mx-10 mt-5 text-base">
+      <div class="flex max-[700px]:flex-col justify-between mx-10 mt-5 text-base max-[700px]:w-full max-[700px]:mx-0 gap-8 mb-10">
+        <div class="flex max-[700px]:flex-col min-[700px]:gap-44">
         <div class="grid grid-rows-2">
-          <p class="text-white text-8 ">Your KZ Points Balance </p>
+          <p class="text-white text-8 max-[700px]:text-sm ">Your KZ Points Balance </p>
           <span class="flex tracking-[-0.64px]" >
-            <p class="text-[48px] text-white mr-2">--</p>
+            <p class="text-[48px] max-[700px]:text-[32px] max-[700px]:font-medium
+             text-white mr-2">--</p>
             <img src="https://kzco.in/assets/two3-807026c7.svg" alt="star" class="w-[32px] h-[32px]">
           </span>
         </div>
         <div class="grid grid-rows-2">
-          <p class="text-white text-8">Convertible KZ Points </p>
+          <p class="text-white text-8   max-[700px]:text-sm">Convertible KZ Points </p>
           <span class="flex tracking-[-0.64px]" >
-            <p class="text-[48px] text-white mr-2">--</p>
+            <p class="text-[48px] text-white max-[700px]:font-medium max-[700px]:text-[32px] mr-2">--</p>
             <img src="https://kzco.in/assets/two3-807026c7.svg" alt="star" class="w-[32px] h-[32px]">
           </span>
         </div>
-        <div class="grid grid-rows-2">
-          <span>KZ Points can be converted after $ZK TGE </span>
+      </div>
+        <div class="grid grid-rows-2 max-[700px]:gap-[12px] max-[700px]:w-full max-[700px]:text-sm">
+          <p class="flex items-center">KZ Points can be converted after $ZK TGE </p>
           <button id="check" class="bg-white text-blue00 w-auto h-12 border- rounded-xl shadow1">Convert to $KZ</button>
         </div>
       </div>
     </div>
-<div class="w-full h-screen bg-blue00 mt-20 flex justify-center">
+<div class=" bg-blue00 mt-20 flex justify-center">
   <div class="text-center text-white">
 
-    <div class="mt-24">
+    <div class="mt-24 mb-[88px] max-[700px]:mb-0">
 
-      <div class="text-white text-[120px] font-bold ">
+      <div class="text-white text-[120px] max-[700px]:text-[40px] font-bold ">
         INTRODUCTION
       </div>
     </div>
-    <div class="mt-32 ml-36">
-    <div class="text-gold01 font-bold md:text-[80px] text-[24px] ">KNOWLEDGE TO ZERO</div>
-    <div class="text-white text-[104px] font-bold flex mt-10">1 $KZ = 1 $ZK</div>
+    <div class="flex justify-center items-center gap-[40px] ">
+      <div class="max-[700px]:w-[127px] max-[700px]:h-auto min-[700px]:w-[297px] min-[700px]:h-[283px] ml-1 max-[700px]:ml-3">
+        <img src="https://img.freepik.com/free-vector/cute-cat-robot-cyborg-cartoon-vector-icon-illustration-animal-technology-icon-isolated-flat-vector_138676-12192.jpg?t=st=1722240112~exp=1722243712~hmac=f6e73ad0d6203c9e84545b9ef0a95227595b8e8af05c9ebfe51cc04ff30bd600&w=740" alt="cat" class="w-full h-full">
+      </div>
+    <div class="">
+    <p class="text-gold01 text-left font-bold max-[700px]:text-[34px] text-[90px] ">KNOWLEDGE TO ZERO</p>
+    <p class="text-white text-left text-[104px] max-[700px]:text-[34px] font-bold flex">1 $KZ = 1 $ZK</p>
     </div>
+  </div>
   </div>
 
 </div> 
 
 
 <!-- Tokenomic -->
-<div class="w-full h-auto bg-blue00 flex justify-center pt-96 pb-[300px]">
+<div class="w-full h-auto bg-blue00 flex justify-center pt-96 max-[700px]:pt-0 pb-[300px]">
   <div class="text-center text-white">
 
     <div class="mt-24 mb-20">
 
-      <div class="text-white text-[64px] md:text-[120px] mb-[88px] font-bold ">
+      <div class="text-white text-[40px] min-[700px]:text-[120px] max-[700px]:mb-0 mb-[88px] font-bold ">
         TOKENOMIC
       </div>
     </div>
     <div class="flex ">
     
-    <div class="text-white mt-20 text-center items-center flex flex-col md:flex-row gap-x-[200px]">
-      <div class="">
-      <img src="https://kzco.in/assets/chart-ed95abd1.png" alt="chart" class="w-[263px] h-[263px] md:w-[374px] md:h-[374px]">
+    <div class="text-white mt-20 max-[700px]:mt-0 text-center items-center flex flex-col min-[700px]:flex-row gap-x-[200px]">
+      <div class="max-[700px]:mb-10">
+      <img src="https://kzco.in/assets/chart-ed95abd1.png" alt="chart" class="w-[263px] h-[263px] min-[700px]:w-[374px] min-[700px]:h-[374px]">
     </div>
-    <div class="text-[32px] md:text-[60px]">
+    <div class="text-[22px] min-[700px]::text-[60px]">
       <div class="flex items-center gap-x-2 md:gap-x-8 justify-center">
-        <div class="w-6 h-6 md:w-[49px] md:h-[49px] bg-white mt-1 md:mt-3"></div>
+        <div class="w-6 h-6 min-[700px]:w-[49px] min-[700px]:h-[49px] bg-white mt-1 md:mt-3"></div>
       <p class=" font-bold">
         
         100% COMMUNITY
       </p>
     </div>
     <div class="flex items-center gap-x-2 md:gap-x-8">
-      <div class="w-6 h-6 md:w-[49px] md:h-[49px] bg-gold01 mt-1 md:mt-3"></div>
+      <div class="w-6 h-6 min-[700px]:w-[49px] min-[700px]:h-[49px] bg-gold01 mt-1 md:mt-3"></div>
     <p class=" font-bold">
       
      5% LIQUIDITY
@@ -698,10 +749,10 @@
 <div class="w-full h-auto bg-blue00 ">
   <div class="text-center text-white  pt-72 flex flex-col items-center justify-center">
 
-      <div class="text-white text-[64px] md:text-[120px] font-bold mb-[88px]">
+      <div class="text-white text-[40px] min-[700px]:text-[120px] font-bold mb-[88px]">
         MASCOT
       </div>
-    <div class="flex  justify-center items-center md:w-[650px] md:h-[650px]">
+    <div class="flex  justify-center items-center min-[700px]:w-[650px] min-[700px]::h-[650px]">
 <video src="https://kzco.in/assets/Zat2-65d0bc51.mp4" class="w-full h-full object-cover" playsinline autoplay loop></video>
     </div>
    
@@ -719,7 +770,7 @@
 <div class="">
     <div class="mt-36 mb-32">
 
-      <div class="ext-white text-[64px] md:text-[120px] font-bold mb-[88px]">
+      <div class="ext-white text-[40px] min-[700px]:text-[120px] font-bold mb-[88px]">
         TEAM
       </div>
     </div>
